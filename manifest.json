@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Binance fiat converter",
+  "description":
+    "Use different fiat currency to show coins value in Binance (instead of USD)",
+  "version": "0.1",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.binance.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
